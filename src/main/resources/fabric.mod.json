@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ultimatehardening",
+	"version": "${version}",
+	"name": "UltimateHardening[终极硬化]",
+	"description": "供了不可挖掘的硬化方块，种类繁多，生存模式可获取所有材料，适用于防爆或防破坏结构。",
+	"authors": [
+		"Xuyifei"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ultimatehardening/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cool.js.xuyifei.UltimateHardening"
+		],
+		"fabric-datagen": [
+			"cool.js.xuyifei.UltimateHardeningDataGenerator"
+		],
+		"client": [
+			"cool.js.xuyifei.UltimateHardeningClient"
+		]
+	},
+	"mixins": [
+		"ultimatehardening.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
