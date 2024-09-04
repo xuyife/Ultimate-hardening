@@ -1,5 +1,6 @@
 package cool.js.xuyifei;
 
+import cool.js.xuyifei.item.ModItemGroups;
 import cool.js.xuyifei.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,6 +18,7 @@ public class UltimateHardening implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
 		LOGGER.info("UltimateHardening[终极硬化]");
 	}
 }
